@@ -1,0 +1,15 @@
+/*
+    Document   : css/gotham．css
+    Created on : 2014-09-15 03:25 PM
+    Author     : udit01
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+ @font-face {
+    font-family:'GothamBook';
+    src: url('../font/GothamBook.eot');
+    src: url('../font/GothamBook.woff') format('woff'), url('../font/GothamBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

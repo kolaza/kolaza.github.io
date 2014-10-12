@@ -4063,3 +4063,609 @@
 
 
 }
+
+#orb-layer-2-2 {
+
+
+    opacity: 0.5;
+
+
+    filter: alpha(opacity=50);
+
+
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+
+
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+
+
+    animation: panningmedium 25s linear infinite;
+
+
+    -webkit-animation: panningmedium 25s linear infinite;
+
+
+    -moz-animation: panningmedium 25s linear infinite;
+
+
+    -ms-animation: panningmedium 25s linear infinite;
+
+
+    animation-delay: 0;
+
+
+    -webkit-animation-delay: 0;
+
+
+    -ms-animation-delay: 0;
+
+
+    -moz-animation-delay: 0;
+
+
+}
+
+
+#orb-layer-2-2 .orb {
+
+
+    width: 50px;
+
+
+    height: 50px;
+
+
+}
+#orb-layer-3-2 {
+
+
+    opacity: 0.3;
+
+
+    filter: alpha(opacity=30);
+
+
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+
+
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+
+
+    animation: panningsmall 40s linear infinite;
+
+
+    -webkit-animation: panningsmall 40s linear infinite;
+
+
+    -moz-animation: panningsmall 40s linear infinite;
+
+
+    -ms-animation: panningsmall 40s linear infinite;
+
+
+    animation-delay: 0;
+
+
+    -webkit-animation-delay: 0;
+
+
+    -ms-animation-delay: 0;
+
+
+    -moz-animation-delay: 0;
+
+
+}
+
+
+#orb-layer-3-2 .orb {
+
+
+    width: 20px;
+
+
+    height: 20px;
+
+
+}
+
+
+#orb-layer-4-2 {
+
+
+    opacity: 0.8;
+
+
+    filter: alpha(opacity=80);
+
+
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+
+
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+
+
+    animation: panningtiny 45s linear infinite;
+
+
+    -webkit-animation: panningtiny 45s linear infinite;
+
+
+    -moz-animation: panningtiny 45s linear infinite;
+
+
+    -ms-animation: panningtiny 45s linear infinite;
+
+
+    animation-delay: 0;
+
+
+    -webkit-animation-delay: 0;
+
+
+    -ms-animation-delay: 0;
+
+
+    -moz-animation-delay: 0;
+
+
+}
+
+
+#orb-layer-4-2 .orb {
+
+
+    background:#fff;
+
+
+    width: 2px;
+
+
+    height: 2px;
+
+
+}
+
+#orb-4-2 {
+
+
+    margin-left: 43%;
+
+
+    top: 75%;
+
+
+}
+
+
+#orb-5-2 {
+
+
+    margin-left: -8%;
+
+
+    top: 65%;
+
+
+}
+
+
+#orb-6-2 {
+
+
+    margin-left: 14%;
+
+
+    top: 18%;
+
+
+}
+
+
+#orb-7-2 {
+
+
+    margin-left: -28%;
+
+
+    top: 7%;
+
+
+}
+
+
+#orb-8-2 {
+
+
+    margin-left: 3%;
+
+
+    top: 97%;
+
+
+}
+
+
+#orb-9-2 {
+
+
+    margin-left: 49%;
+
+
+    top: 4%;
+
+
+}
+
+
+#orb-10-2 {
+
+
+    margin-left: -52%;
+
+
+    top: 75%;
+
+
+}
+
+
+#orb-11-2 {
+
+
+    margin-left: 27%;
+
+
+    top: 78%;
+
+
+}
+
+
+#orb-12-2 {
+
+
+    margin-left: -21%;
+
+
+    top: 67%;
+
+
+}
+
+
+#orb-13-2 {
+
+
+    margin-left: 48%;
+
+
+    top: 57%;
+
+
+}
+
+
+#orb-14-2 {
+
+
+    margin-left: 42%;
+
+
+    top: 22%;
+
+
+}
+
+
+#orb-15-2 {
+
+
+    margin-left: -4%;
+
+
+    top: 85%;
+
+
+}
+
+
+#orb-16-2 {
+
+
+    margin-left: -45%;
+
+
+    top: 19%;
+
+
+}
+
+
+#orb-17-2 {
+
+
+    margin-left: 5%;
+
+
+    top: 8%;
+
+
+}
+
+
+#orb-18-2 {
+
+
+    margin-left: -37%;
+
+
+    top: 88%;
+
+
+}
+
+
+#orb-19-2 {
+
+
+    margin-left: 6%;
+
+
+    top: 73%;
+
+
+}
+
+
+#orb-20-2 {
+
+
+    margin-left: -14%;
+
+
+    top: 50%;
+
+
+}
+
+
+#orb-21-2 {
+
+
+    margin-left: 4%;
+
+
+    top: 76%;
+
+
+}
+
+
+#orb-22-2 {
+
+
+    margin-left: -14%;
+
+
+    top: 89%;
+
+
+}
+
+
+#orb-23-2 {
+
+
+    margin-left: 28%;
+
+
+    top: 87%;
+
+
+}
+
+
+#orb-24-2 {
+
+
+    margin-left: -33%;
+
+
+    top: 68%;
+
+
+}
+
+
+#orb-25-2 {
+
+
+    margin-left: -1%;
+
+
+    top: 90%;
+
+
+}
+
+
+#orb-26-2 {
+
+
+    margin-left: 42%;
+
+
+    top: 70%;
+
+
+}
+
+
+#orb-27-2 {
+
+
+    margin-left: 18%;
+
+
+    top: 83%;
+
+
+}
+
+
+#orb-28-2 {
+
+
+    margin-left: 21%;
+
+
+    top: 86%;
+
+
+}
+
+
+#orb-29-2 {
+
+
+    margin-left: -19%;
+
+
+    top: 20%;
+
+
+}
+
+
+#orb-30-2 {
+
+
+    margin-left: 31%;
+
+
+    top: 11%;
+
+
+}
+
+
+#orb-31-2 {
+
+
+    margin-left: 2%;
+
+
+    top: 32%;
+
+
+}
+
+
+#orb-32-2 {
+
+
+    margin-left: 21%;
+
+
+    top: 18%;
+
+
+}
+
+
+#orb-33-2 {
+
+
+    margin-left: 40%;
+
+
+    top: 26%;
+
+
+}
+
+
+#orb-34-2 {
+
+
+    margin-left: 10%;
+
+
+    top: 26%;
+
+
+}
+
+
+#orb-35-2 {
+
+
+    margin-left: -48%;
+
+
+    top: 6%;
+
+
+}
+
+
+#orb-36-2 {
+
+
+    margin-left: -37%;
+
+
+    top: 18%;
+
+
+}
+
+
+#orb-37-2 {
+
+
+    margin-left: -44%;
+
+
+    top: 39%;
+
+
+}
+
+
+#orb-38-2 {
+
+
+    margin-left: -46%;
+
+
+    top: 68%;
+
+
+}
+
+
+#orb-39-2 {
+
+
+    margin-left: -39%;
+
+
+    top: 91%;
+
+
+}
+
+
+#orb-40-2 {
+
+
+    margin-left: 22%;
+
+
+    top: 29%;
+
+
+}
+

@@ -1,19 +1,30 @@
 About us/index.html -Our Team/index.html -Our Values/index.html -our vision/index.html -Our Mission/index.html -Why Kolaza/index.html Portfolio/index.html Solutions/index.html -Startup Product Development/index.html -CMS Solutions/index.html -Saas Solutions/index.html -e-Commerce Solutions/index.html -Cloud Solutions/index.html -Custom Solutions/index.html Services/index.html -UI Design/index.html -Responsive Design/index.html -Web Development/index.html -Facebook integration/index.html -Facebook Page Building/index.html -Twitter integration/index.html -LinkedIn integration/index.html -Google integration/index.html -Payment Gateways integration/index.html -Android App development/index.html -Portfolio development/index.html -Content management/index.html Portfolio/index.html Careers/index.html -work -openings Contact/index.html index.html
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Testing | Kolaza</title>
-    <meta name="alexaVerifyID" content="mt6jWjC-vzQVZiDwzG8IlVmX2fI"/>
+    <title>Welcome to the Arena</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="converse.js-0.8.3/css/converse.min.css">
+    <script src="converse.js-0.8.3/builds/converse.min.js"></script>
 </head>
 
 <body>
-<!-- for seo -->
-    <a href="http://onlinecasino.us/florida-casinos/">Local casinos in Florida</a>
-<!-- for seo -->
-<!-- autocheck by push2check.net -->
-<a href="http://push2check.net/kolaza.com" target="_blank"  title="Push 2 Check">
-<img src="http://auto.push2check.com/p.php?d=kolaza.com&w=88&h=31&bw=2&bg=F7E900&f=1C89E8&b=1C89E8&png=1&pngi=1&psn=Kolaza&plc=all" style="border-style: none" alt="Push 2 Check"/></a>
-<!-- autocheck by push2check.net -->
-</body>
-
+    <p>Hello Codio! Lets make a xmpp chat</p>
+    </body>
+    <!-- configure Converse.js -->
+    <script>
+require(['converse'], function (converse) {
+    converse.initialize({
+        auto_list_rooms: true,
+        auto_subscribe: true,
+        bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
+        hide_muc_server: false,
+        i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
+        prebind: false,
+        show_controlbox_by_default: true,
+        roster_groups: true
+    });
+});
+        </script>
+    <!-- end configure Converse.js -->
 </html>

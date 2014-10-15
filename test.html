@@ -4,44 +4,69 @@
 
 <head>
     <title>Kolaza Chat App</title>
-    
-    
+
+
     <!-- Define Charset -->
     <meta charset="utf-8">
     <!--  Alexa meta -->
-    <meta name="alexaVerifyID" content="mt6jWjC-vzQVZiDwzG8IlVmX2fI"/>
-    
+    <meta name="alexaVerifyID" content="mt6jWjC-vzQVZiDwzG8IlVmX2fI" />
+
     <!-- Responsive Metatag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Page Description and Author -->
     <meta name="description" content="Kolaza Kukoo - The chat app for static websites.">
     <meta name="author" content="Kolaza">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
-    
+
     <link rel="stylesheet" type="text/css" media="screen" href="converse.js-0.8.3/css/converse.min.css">
-    <script src="converse.js-0.8.3/builds/converse.min.js"></script>
+
 </head>
 
 <body>
-    <p>Chat with a Kolaza.</p>
-    </body>
-    <!-- configure Converse.js -->
-    <script>
-require(['converse'], function (converse) {
-    converse.initialize({
-        auto_list_rooms: true,
-        auto_subscribe: true,
-        bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
-        hide_muc_server: false,
-        i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
-        prebind: false,
-        show_controlbox_by_default: true,
-        roster_groups: true
+    <p>Chat with Kolaza.</p>
+</body>
+<!-- configure Chat -->
+<script src="converse.js-0.8.3/builds/converse.min.js"></script>
+<script>
+    require(['converse'], function(converse) {
+        converse.initialize({
+            auto_list_rooms: false,
+            auto_subscribe: false,
+            bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
+            hide_muc_server: false,
+            i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
+            prebind: false,
+            show_controlbox_by_default: true,
+            roster_groups: true,
+            // added 
+            play_sounds: true,
+            debug: true,
+            roster_groups: true,
+            expose_rid_and_sid: true, //for the values to be used in prebinding
+            allow_contact_requests: false //for disallowing user to add contacts
+        });
+        chat_login.check();
     });
-});
-        </script>
-    <!-- end configure Converse.js -->
+    /* Logging chat after initialization */
+    var chat_login = (function() {
+        alert("in chat_show");
+        var check = function() {
+            if($("input[name='jid']").length) {
+                alert("present");
+                $("input[name='jid']").attr("value", "kolaza-team@jabberpl.org");
+                $("input[name='password']").attr("value", "qwerty@123");
+                $("#converse-login").submit();
+            }
+        }
+        return {
+            check: check
+        }
+    })();
+</script>
+<!-- end configure chat -->
+
 </html>

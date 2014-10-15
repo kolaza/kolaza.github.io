@@ -36,12 +36,15 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="../css/colors/blue.css" title="blue" media="screen" />
 
+    <!-- Chat css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../converse.js-0.8.3/css/converse.min.css">
+
     <!-- Fontello Icons CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="../css/fontello.css" media="screen">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 
 
-    <!-- Venda JS  -->
+    <!-- JS  -->
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.migrate.js"></script>
     <script type="text/javascript" src="../js/modernizrr.js"></script>
@@ -482,5 +485,42 @@
     </div>
 
 </body>
+<!-- configure Converse.js -->
+<script>
+    require(['converse'], function(converse) {
+        converse.initialize({
+            auto_list_rooms: false,
+            auto_subscribe: false,
+            bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
+            hide_muc_server: false,
+            i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
+            prebind: false,
+            show_controlbox_by_default: true,
+            roster_groups: true,
+            // added 
+            play_sounds: true,
+            debug: true,
+            roster_groups: true,
+            expose_rid_and_sid: true, //for the values to be used in prebinding
+            allow_contact_requests: false //for disallowing user to add contacts
+        });
+        chat_login.check();
+    });
+    var chat_login = (function() {
+        alert("in chat_show");
+        var check = function() {
+            if($("input[name='jid']").length) {
+                alert("present");
+                $("input[name='jid']").attr("value", "kolaza-team@jabberpl.org");
+                $("input[name='password']").attr("value", "qwerty@123");
+                $("#converse-login").submit();
+            }
+        }
+        return {
+            check: check
+        }
+    })();
+</script>
+<!-- end configure Converse.js -->
 
 </html>

@@ -44,6 +44,9 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
 
+    <!-- Chat css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="converse.js-0.8.3/css/converse.min.css">
+
     <!-- Fontello Icons CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/fontello.css" media="screen">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
@@ -107,7 +110,7 @@
                         <div class="col-md-6">
                             <!-- Start Contact Info -->
                             <ul class="contact-details">
-                                <li><a href="#"><i class="icon-phone-1"></i> +9 345 678 000</a>
+                                <li><a href="#"><i class="icon-phone-1"></i> +91 971 106 1355</a>
                                 </li>
                                 <li><a href="#"><i class="icon-mail-2"></i> info@kolaza.com</a>
                                 </li>
@@ -1847,11 +1850,11 @@
                             </div>
                             <div class="col-md-6">
                                 <ul class="footer-nav">
-                                    <li><a href="#">Sitemap</a>
+                                    <li><a target="_blank" href="sitemap.xml">Sitemap</a>
                                     </li>
-                                    <li><a href="#">Privacy Policy</a>
+                                    <li><a href="privacy/">Privacy Policy</a>
                                     </li>
-                                    <li><a href="#">Contact</a>
+                                    <li><a href="contact/">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1879,4 +1882,41 @@
 
 </body>
 
+<!-- configure Converse.js -->
+    <script type="text/javascript" src="converse.js-0.8.3/builds/converse.min.js"></script>
+<script>
+    require(['converse'], function(converse) {
+        converse.initialize({
+            auto_list_rooms: false,
+            auto_subscribe: false,
+            bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
+            hide_muc_server: true,
+            i18n: locales.en, 
+            prebind: false,
+            show_controlbox_by_default: false,
+            roster_groups: false,
+            // added 
+            keepalive: true,
+            play_sounds: true,
+            debug: true,
+            roster_groups: true,
+            expose_rid_and_sid: true, //for the values to be used in prebinding
+            allow_contact_requests: false //for disallowing user to add contacts
+        });
+        chat_login.check();
+    });
+    var chat_login = (function() {
+        var check = function() {
+            if($("input[name='jid']").length) {
+                $("input[name='jid']").attr("value", "kolaza-team@jabberpl.org");
+                $("input[name='password']").attr("value", "qwerty@123");
+                $("#converse-login").submit();
+            }
+        }
+        return {
+            check: check
+        }
+    })();
+</script>
+<!-- end configure Converse.js -->
 </html>

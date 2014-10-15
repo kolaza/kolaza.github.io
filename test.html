@@ -29,20 +29,22 @@
 <body>
     <p>Chat with Kolaza.</p>
 </body>
-<!-- configure Chat -->
-<script src="converse.js-0.8.3/builds/converse.min.js"></script>
+
+<!-- configure Converse.js -->
+    <script type="text/javascript" src="../converse.js-0.8.3/builds/converse.min.js"></script>
 <script>
     require(['converse'], function(converse) {
         converse.initialize({
             auto_list_rooms: false,
             auto_subscribe: false,
             bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
-            hide_muc_server: false,
-            i18n: locales.en, // Refer to ./locale/locales.js to see which locales are supported
+            hide_muc_server: true,
+            i18n: locales.en, 
             prebind: false,
-            show_controlbox_by_default: true,
-            roster_groups: true,
+            show_controlbox_by_default: false,
+            roster_groups: false,
             // added 
+            keepalive: true,
             play_sounds: true,
             debug: true,
             roster_groups: true,
@@ -51,12 +53,9 @@
         });
         chat_login.check();
     });
-    /* Logging chat after initialization */
     var chat_login = (function() {
-        alert("in chat_show");
         var check = function() {
             if($("input[name='jid']").length) {
-                alert("present");
                 $("input[name='jid']").attr("value", "kolaza-team@jabberpl.org");
                 $("input[name='password']").attr("value", "qwerty@123");
                 $("#converse-login").submit();
@@ -67,6 +66,5 @@
         }
     })();
 </script>
-<!-- end configure chat -->
-
+<!-- end configure Converse.js -->
 </html>

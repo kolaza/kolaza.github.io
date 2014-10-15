@@ -537,7 +537,8 @@ $(document).ready(function($) {
 /*	Portfolio Isotope
 /*----------------------------------------------------*/
 
-jQuery(window).load(function(){
+(function($) {
+    $(window).load(function(event) {
 	
 	var $container = $('#portfolio');
 	$container.isotope({
@@ -574,6 +575,7 @@ jQuery(window).load(function(){
 	});
 	
 });
+    })(jQuery);
 /* ----------------- End JS Document ----------------- */
 
 

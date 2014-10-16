@@ -44,9 +44,6 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue" media="screen" />
 
-    <!-- Chat css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="converse.js-0.8.3/css/converse.min.css">
-
     <!-- Fontello Icons CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/fontello.css" media="screen">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
@@ -1668,9 +1665,6 @@
                                 <div class="member-socail">
                                     <a class="facebook" href="#"><i class="icon-facebook"></i></a>
                                     <a class="twitter" href="#"><i class="icon-twitter-2"></i></a>
-                                    <a class="dribbble" href="#"><i class="icon-dribbble-2"></i></a>
-                                    <a class="flickr" href="#"><i class="icon-flickr-1"></i></a>
-                                    <a class="instagramm" href="#"><i class="icon-instagramm"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1688,6 +1682,7 @@
                                 </div>
                                 <!-- Memebr Social Links -->
                                 <div class="member-socail">
+                                    <a class="gplus" href="https://plus.google.com/u/0/+UditKulshrestha/" target="blank"><i class="icon-gplus"></i></a>
                                     <a class="twitter" href="#"><i class="icon-twitter-2"></i></a>
                                 </div>
                             </div>
@@ -1882,41 +1877,4 @@
 
 </body>
 
-<!-- configure Converse.js -->
-    <script type="text/javascript" src="converse.js-0.8.3/builds/converse.min.js"></script>
-<script>
-    require(['converse'], function(converse) {
-        converse.initialize({
-            auto_list_rooms: false,
-            auto_subscribe: false,
-            bosh_service_url: 'https://jabberpl.org/http-bind/', // Please use this connection manager only for testing purposes
-            hide_muc_server: true,
-            i18n: locales.en, 
-            prebind: false,
-            show_controlbox_by_default: false,
-            roster_groups: false,
-            // added 
-            keepalive: true,
-            play_sounds: true,
-            debug: true,
-            roster_groups: true,
-            expose_rid_and_sid: true, //for the values to be used in prebinding
-            allow_contact_requests: false //for disallowing user to add contacts
-        });
-        chat_login.check();
-    });
-    var chat_login = (function() {
-        var check = function() {
-            if($("input[name='jid']").length) {
-                $("input[name='jid']").attr("value", "kolaza-team@jabberpl.org");
-                $("input[name='password']").attr("value", "qwerty@123");
-                $("#converse-login").submit();
-            }
-        }
-        return {
-            check: check
-        }
-    })();
-</script>
-<!-- end configure Converse.js -->
 </html>
